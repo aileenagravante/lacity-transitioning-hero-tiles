@@ -1,0 +1,264 @@
+//
+// Layout Changes
+//
+
+.front {
+  #main {
+    max-width: 1920px;
+    #main-a-wrap {
+      margin: 0;
+    }
+  }
+}
+
+// HEADER SPACER
+
+#header-spacer {
+  height: 5.9rem;
+  transition: none;
+  @include window_size(mobile-one-tile) {
+    height: 9.5rem;
+  }
+}
+
+//HEADER
+
+#header {
+  margin: 0;
+  top: 0;
+}
+
+.region-header-menu { float: none; }
+
+body.front #header #header-wrap {
+  //background: $header_blue;
+}
+
+#logo {
+  padding-top: 10px;
+  @media all and (max-width: 640px) {
+    width: 80%;
+  }
+}
+@media all and (max-width: 540px) {
+  #logo {
+    height: 105px;
+    position: relative;
+  }
+  #logo img {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0;
+    margin: auto;
+}
+}
+#name-and-slogan {
+  display: none;
+}
+
+#header-background-wrap {
+  display: none;
+}
+
+#header-background-wrap #header-background {
+  background-position: -8px -4px !important;
+}
+
+#header #header-wrap {
+  // position: initial;
+  margin-left: 0;
+  padding: 0;
+  width: 100% ;
+  background: #0f2940;
+  z-index: 998;
+}
+
+#header-wrap .wrap {
+  max-width: 1920px !important;
+  width: 100% !important;
+  margin: 0;
+}
+
+// MAIN MENU
+
+#main-menu-holder {
+  background: $global_nav_blue ;
+}
+
+#menu-wrap {
+  p.menu__link {
+    display: inline;
+  }
+}
+/* <----------------- Scroll Pane -----------------> */
+#page, .region-bottom{
+    overflow-y: auto;
+    overflow-x: hidden !important;
+}
+
+
+// HERO MENU LOS ANGELES BLOCK
+
+.block-header-menu-los-angeles {
+  display: block;
+  position: absolute;
+  top: 3.5rem;
+  left: 1.25rem;
+  @include window_size(mobile-one-tile) {
+    display: none;
+  }
+  a {
+    color: white;
+    box-sizing: content-box;
+    font-size: 18px;
+    font-family: Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    text-decoration: none;
+  }
+}
+
+
+@media all and (max-width: 1100px) {
+  #side-menu {
+    margin-top: -5px;
+  }
+}
+@media all and (max-width: 960px) {
+  // #block-menu-menu-primary-navigation-second {
+  //   padding-right: 20px;
+  // }
+  .region-header-menu {
+    position: static;
+  }
+}
+
+.sidenav li.first {
+    font-style: italic;
+}
+span.slicknav_arrow {
+    font-size: 18px !important;
+    color: white;
+}
+
+//HEROS
+.front {
+  .view-heros {
+    display: none;
+    @include window_size(mobile-one-tile) {
+      display: block;
+    }
+  }
+}
+.view-heros {
+  .hero-none { height: 0; }
+  img {
+    max-width: inherit;
+    width: auto;
+    max-height: 270px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    @include window_size(desktop) {
+      width: 100%;
+      max-height: inherit;
+      left: 0;
+      transform: translateX(0);
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+
+//CONTENT
+
+#content {
+  iframe {
+    width: 100%;
+    border: none;
+    @include window_size(desktop) {
+      width: 640px;
+    }
+  }
+  .featured_socrata_data, .featured_lacity_data {
+    iframe {
+      height: 600px;
+    }
+  }
+  a {
+    color: $link_blue;
+    &:hover {
+      color: $link_blue;
+      text-decoration: underline;
+    }
+  }
+  nav.breadcrumb {
+    a {
+      text-decoration: none;
+      color: $drk_grey;
+      &:hover {
+        color: $link_blue;
+      }
+    }
+    p {
+      display: inline;
+    }
+  }
+
+  @include window_size(desktop) {
+    p, h1, h2, h3, h4, h5, h6, ul, ol {
+      margin-right: 3rem;
+    }
+    .region {
+      p, h1, h2, h3, h4, h5, h6, ul, ol {
+        margin-right: 0;
+      }
+    }
+  }
+  table {
+    border: 0px;
+    tr {
+      border: 0px;
+      th {
+        border: 0px;
+        vertical-align: top;
+      }
+      td {
+        border: 0px;
+        vertical-align: top;
+      }
+    }
+  }
+}
+
+.sidenav li.first {
+    font-style: italic;
+}
+span.nav-arrow {
+    font-size: 18px !important;
+}
+
+.page__title {
+  margin-top: 10px;
+}
+
+//Secondary pages
+.secondarypage_block_menu ul li a {
+  color:#006699;
+}
+
+
+//SOCIAL TWEETS
+.region-social-tweets-home {
+  visibility: hidden !important;
+}
+
+// Temp Menu Fix (Remove After SlideOut Menu Rollout)
+
+#block-menu-menu-primary-navigation-second #item-menu.menu__item {
+  display: inline;
+  @include window_size(mobile-one-tile) {
+    display: none;
+  }
+}

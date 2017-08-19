@@ -1,0 +1,27 @@
+//
+// Variables
+//
+
+// Fonts
+$lato-reg: 'lato-reg',sans-serif;
+$lato-bold: 'lato-bold',sans-serif;
+$roboto-condensed-reg: 'roboto-condensed-reg',sans-serif;
+$roboto-condensed-bold: 'roboto-condensed-bold',sans-serif;
+
+// Colors
+$orange: #cc4e10;
+$box_shadow: rgba(50,50,50,0.15);
+$grey_border: #cccccc;
+$black: #212121;
+$drk_grey: #474747;
+$classic_blue: #014982;
+$header_blue: #2C4256;
+$tile_blue: #165090;
+$h1_blue: #153872;
+$link_blue: lighten($h1_blue, 10%);
+$link_active_blue: #BEE4F2;
+$global_nav_blue: #0f2940;
+$footer: #465b66;
+$footer_light_blue_links: #95daff;
+// $header_accent_blue: #ACD0DC;
+$header_accent_blue: $footer_light_blue_links;

@@ -1,0 +1,68 @@
+//
+// Fonts
+//
+
+@font-face {
+  font-family: 'lato-bold';
+  src: url('../font/Lato-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'lato-reg';
+  src: url('../font/Lato-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roboto-condensed-bold';
+  src: url('../font/RobotoCondensed-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roboto-condensed-reg';
+  src: url('../font/RobotoCondensed-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+//
+// Font Changes
+//
+
+body {
+    font-family: $lato-reg;
+}
+
+#site-name {
+  font-family: $roboto-condensed-reg;
+  font-size: 0.8em;
+  line-height: 1.2em;
+  @include window_size(tab-narrow-up) {
+    font-size: 1.6em;
+  }
+  @include window_size(tab-wide-up) {
+    font-size: 2.2em;
+  }
+}
+
+ #content {
+  h1 {
+    font-family: $roboto-condensed-reg;
+    font-weight: 300;
+    color: $h1_blue;
+  }
+  h2, h3, h4, h5 {
+    font-family: $lato-reg;
+  }
+}
+
+.field-name-field-before-slab, #breadcrumb-title {
+  h1, h2, h3, h4, h5 {
+    font-family: $roboto-condensed-reg;
+  }
+}

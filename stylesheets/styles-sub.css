@@ -1,0 +1,894 @@
+/**
+ *@file
+ *Styles sheet for lastarter_sub theme customization.
+ *
+ */
+@font-face {
+  font-family: 'lato-bold';
+  src: url("../font/Lato-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'lato-reg';
+  src: url("../font/Lato-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'roboto-condensed-bold';
+  src: url("../font/RobotoCondensed-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'roboto-condensed-reg';
+  src: url("../font/RobotoCondensed-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+/* line 37, ../sass/_fonts.scss */
+body {
+  font-family: "lato-reg", sans-serif;
+}
+
+/* line 41, ../sass/_fonts.scss */
+#site-name {
+  font-family: "roboto-condensed-reg", sans-serif;
+  font-size: 0.8em;
+  line-height: 1.2em;
+}
+@media all and (min-width: 481px) {
+  /* line 41, ../sass/_fonts.scss */
+  #site-name {
+    font-size: 1.6em;
+  }
+}
+@media all and (min-width: 720px) {
+  /* line 41, ../sass/_fonts.scss */
+  #site-name {
+    font-size: 2.2em;
+  }
+}
+
+/* line 54, ../sass/_fonts.scss */
+#content h1 {
+  font-family: "roboto-condensed-reg", sans-serif;
+  font-weight: 300;
+  color: #153872;
+}
+/* line 59, ../sass/_fonts.scss */
+#content h2, #content h3, #content h4, #content h5 {
+  font-family: "lato-reg", sans-serif;
+}
+
+/* line 65, ../sass/_fonts.scss */
+.field-name-field-before-slab h1, .field-name-field-before-slab h2, .field-name-field-before-slab h3, .field-name-field-before-slab h4, .field-name-field-before-slab h5, #breadcrumb-title h1, #breadcrumb-title h2, #breadcrumb-title h3, #breadcrumb-title h4, #breadcrumb-title h5 {
+  font-family: "roboto-condensed-reg", sans-serif;
+}
+
+/* line 6, ../sass/_layout.scss */
+.front #main {
+  max-width: 1920px;
+}
+/* line 8, ../sass/_layout.scss */
+.front #main #main-a-wrap {
+  margin: 0;
+}
+
+/* line 16, ../sass/_layout.scss */
+#header-spacer {
+  height: 5.9rem;
+  transition: none;
+}
+@media all and (min-width: 541px) {
+  /* line 16, ../sass/_layout.scss */
+  #header-spacer {
+    height: 9.5rem;
+  }
+}
+
+/* line 26, ../sass/_layout.scss */
+#header {
+  margin: 0;
+  top: 0;
+}
+
+/* line 31, ../sass/_layout.scss */
+.region-header-menu {
+  float: none;
+}
+
+/* line 37, ../sass/_layout.scss */
+#logo {
+  padding-top: 10px;
+}
+@media all and (max-width: 640px) {
+  /* line 37, ../sass/_layout.scss */
+  #logo {
+    width: 80%;
+  }
+}
+
+@media all and (max-width: 540px) {
+  /* line 44, ../sass/_layout.scss */
+  #logo {
+    height: 105px;
+    position: relative;
+  }
+
+  /* line 48, ../sass/_layout.scss */
+  #logo img {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0;
+    margin: auto;
+  }
+}
+/* line 56, ../sass/_layout.scss */
+#name-and-slogan {
+  display: none;
+}
+
+/* line 60, ../sass/_layout.scss */
+#header-background-wrap {
+  display: none;
+}
+
+/* line 64, ../sass/_layout.scss */
+#header-background-wrap #header-background {
+  background-position: -8px -4px !important;
+}
+
+/* line 68, ../sass/_layout.scss */
+#header #header-wrap {
+  margin-left: 0;
+  padding: 0;
+  width: 100%;
+  background: #0f2940;
+  z-index: 998;
+}
+
+/* line 77, ../sass/_layout.scss */
+#header-wrap .wrap {
+  max-width: 1920px !important;
+  width: 100% !important;
+  margin: 0;
+}
+
+/* line 85, ../sass/_layout.scss */
+#main-menu-holder {
+  background: #0f2940;
+}
+
+/* line 90, ../sass/_layout.scss */
+#menu-wrap p.menu__link {
+  display: inline;
+}
+
+/* <----------------- Scroll Pane -----------------> */
+/* line 95, ../sass/_layout.scss */
+#page, .region-bottom {
+  overflow-y: auto;
+  overflow-x: hidden !important;
+}
+
+/* line 103, ../sass/_layout.scss */
+.block-header-menu-los-angeles {
+  display: block;
+  position: absolute;
+  top: 3.5rem;
+  left: 1.25rem;
+}
+@media all and (min-width: 541px) {
+  /* line 103, ../sass/_layout.scss */
+  .block-header-menu-los-angeles {
+    display: none;
+  }
+}
+/* line 111, ../sass/_layout.scss */
+.block-header-menu-los-angeles a {
+  color: white;
+  box-sizing: content-box;
+  font-size: 18px;
+  font-family: Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+  text-decoration: none;
+}
+
+@media all and (max-width: 1100px) {
+  /* line 122, ../sass/_layout.scss */
+  #side-menu {
+    margin-top: -5px;
+  }
+}
+@media all and (max-width: 960px) {
+  /* line 130, ../sass/_layout.scss */
+  .region-header-menu {
+    position: static;
+  }
+}
+/* line 135, ../sass/_layout.scss */
+.sidenav li.first {
+  font-style: italic;
+}
+
+/* line 138, ../sass/_layout.scss */
+span.slicknav_arrow {
+  font-size: 18px !important;
+  color: white;
+}
+
+/* line 145, ../sass/_layout.scss */
+.front .view-heros {
+  display: none;
+}
+@media all and (min-width: 541px) {
+  /* line 145, ../sass/_layout.scss */
+  .front .view-heros {
+    display: block;
+  }
+}
+
+/* line 153, ../sass/_layout.scss */
+.view-heros .hero-none {
+  height: 0;
+}
+/* line 154, ../sass/_layout.scss */
+.view-heros img {
+  max-width: inherit;
+  width: auto;
+  max-height: 270px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media all and (min-width: 960px) {
+  /* line 154, ../sass/_layout.scss */
+  .view-heros img {
+    width: 100%;
+    max-height: inherit;
+    left: 0;
+    transform: translateX(0);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+/* line 177, ../sass/_layout.scss */
+#content iframe {
+  width: 100%;
+  border: none;
+}
+@media all and (min-width: 960px) {
+  /* line 177, ../sass/_layout.scss */
+  #content iframe {
+    width: 640px;
+  }
+}
+/* line 185, ../sass/_layout.scss */
+#content .featured_socrata_data iframe, #content .featured_lacity_data iframe {
+  height: 600px;
+}
+/* line 189, ../sass/_layout.scss */
+#content a {
+  color: #1d4d9d;
+}
+/* line 191, ../sass/_layout.scss */
+#content a:hover {
+  color: #1d4d9d;
+  text-decoration: underline;
+}
+/* line 197, ../sass/_layout.scss */
+#content nav.breadcrumb a {
+  text-decoration: none;
+  color: #474747;
+}
+/* line 200, ../sass/_layout.scss */
+#content nav.breadcrumb a:hover {
+  color: #1d4d9d;
+}
+/* line 204, ../sass/_layout.scss */
+#content nav.breadcrumb p {
+  display: inline;
+}
+@media all and (min-width: 960px) {
+  /* line 210, ../sass/_layout.scss */
+  #content p, #content h1, #content h2, #content h3, #content h4, #content h5, #content h6, #content ul, #content ol {
+    margin-right: 3rem;
+  }
+  /* line 214, ../sass/_layout.scss */
+  #content .region p, #content .region h1, #content .region h2, #content .region h3, #content .region h4, #content .region h5, #content .region h6, #content .region ul, #content .region ol {
+    margin-right: 0;
+  }
+}
+/* line 219, ../sass/_layout.scss */
+#content table {
+  border: 0px;
+}
+/* line 221, ../sass/_layout.scss */
+#content table tr {
+  border: 0px;
+}
+/* line 223, ../sass/_layout.scss */
+#content table tr th {
+  border: 0px;
+  vertical-align: top;
+}
+/* line 227, ../sass/_layout.scss */
+#content table tr td {
+  border: 0px;
+  vertical-align: top;
+}
+
+/* line 235, ../sass/_layout.scss */
+.sidenav li.first {
+  font-style: italic;
+}
+
+/* line 238, ../sass/_layout.scss */
+span.nav-arrow {
+  font-size: 18px !important;
+}
+
+/* line 242, ../sass/_layout.scss */
+.page__title {
+  margin-top: 10px;
+}
+
+/* line 247, ../sass/_layout.scss */
+.secondarypage_block_menu ul li a {
+  color: #006699;
+}
+
+/* line 253, ../sass/_layout.scss */
+.region-social-tweets-home {
+  visibility: hidden !important;
+}
+
+/* line 259, ../sass/_layout.scss */
+#block-menu-menu-primary-navigation-second #item-menu.menu__item {
+  display: inline;
+}
+@media all and (min-width: 541px) {
+  /* line 259, ../sass/_layout.scss */
+  #block-menu-menu-primary-navigation-second #item-menu.menu__item {
+    display: none;
+  }
+}
+
+/* line 7, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page #breadcrumb-title {
+  display: none !important;
+}
+/* line 10, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item {
+  font-family: "roboto-condensed-reg", sans-serif;
+  font-size: 20px;
+  color: #fff;
+  background: black;
+  float: left;
+  margin-bottom: 8px;
+  min-height: 246px;
+  max-height: 246px;
+  overflow: hidden;
+}
+/* line 21, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item a, .node-type-tiled-page .grid-item span {
+  color: #fff;
+  text-decoration: none;
+}
+/* line 25, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item h2 {
+  font-size: 1em;
+}
+/* line 28, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item img {
+  margin: 0 0;
+  padding: 0 0;
+  overflow: hidden;
+}
+/* line 33, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item article {
+  position: relative;
+  padding: 0 0 10px;
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+/* line 41, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item .submitted {
+  display: none;
+}
+/* line 44, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item .link-more-items {
+  bottom: 0;
+  font-family: "lato-reg", sans-serif;
+  font-size: 10px;
+  min-height: 26px;
+  overflow: hidden;
+  position: absolute;
+  z-index: 990;
+}
+/* line 53, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item .node-title a {
+  font-weight: normal;
+  width: 100%;
+}
+/* line 57, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.video-tile-nomodules {
+  width: 32.54%;
+}
+@media all and (min-width: 540px) and (max-width: 960px) {
+  /* line 57, ../sass/components/_isotope-tiles-nomodules.scss */
+  .node-type-tiled-page .grid-item.video-tile-nomodules {
+    width: 65.08%;
+  }
+}
+/* line 62, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.video-tile-nomodules .link-more-items {
+  padding-left: 10px;
+}
+/* line 65, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.video-tile-nomodules header {
+  display: none;
+}
+/* line 68, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.video-tile-nomodules .caption {
+  position: absolute;
+  top: 176px;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px 30px 10px;
+  text-align: left;
+}
+/* line 77, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.video-tile-nomodules .field-name-field-video-clip {
+  display: none;
+}
+@media all and (min-width: 481px) {
+  /* line 77, ../sass/components/_isotope-tiles-nomodules.scss */
+  .node-type-tiled-page .grid-item.video-tile-nomodules .field-name-field-video-clip {
+    display: block;
+  }
+}
+/* line 82, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.video-tile-nomodules .field-name-field-video-clip video {
+  width: 100%;
+  min-height: 246px;
+  object-fit: cover;
+}
+/* line 88, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.video-tile-nomodules .field-name-field-image {
+  max-height: 246px;
+}
+/* line 90, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.video-tile-nomodules .field-name-field-image img {
+  min-height: 246px;
+  min-width: 100%;
+  padding: 0;
+}
+/* line 97, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.blog-tile-nomodules {
+  width: 32.54%;
+}
+/* line 99, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.blog-tile-nomodules .link-more-items {
+  padding-left: 10px;
+}
+/* line 102, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.blog-tile-nomodules .blog-result {
+  position: absolute;
+  top: 246px;
+  width: 100%;
+}
+/* line 107, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.blog-tile-nomodules .field-name-field-image {
+  max-height: 246px;
+}
+/* line 109, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.blog-tile-nomodules .field-name-field-image img {
+  min-height: 246px;
+  min-width: 100%;
+  padding: 0;
+}
+/* line 115, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.blog-tile-nomodules .field-name-field-video-clip {
+  display: none;
+}
+@media all and (min-width: 481px) {
+  /* line 115, ../sass/components/_isotope-tiles-nomodules.scss */
+  .node-type-tiled-page .grid-item.blog-tile-nomodules .field-name-field-video-clip {
+    display: block;
+  }
+}
+/* line 120, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.blog-tile-nomodules .field-name-field-video-clip video {
+  width: 100%;
+  min-height: 246px;
+  object-fit: cover;
+}
+/* line 126, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.blog-tile-nomodules .node-title a {
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 10px 20px 30px 10px;
+  position: absolute;
+  left: 0;
+  text-align: left;
+}
+@media all and (min-width: 541px) {
+  /* line 126, ../sass/components/_isotope-tiles-nomodules.scss */
+  .node-type-tiled-page .grid-item.blog-tile-nomodules .node-title a {
+    background: rgba(0, 0, 0, 0.5);
+  }
+}
+@media all and (min-width: 540px) and (max-width: 960px) {
+  /* line 97, ../sass/components/_isotope-tiles-nomodules.scss */
+  .node-type-tiled-page .grid-item.blog-tile-nomodules {
+    width: 65.08%;
+  }
+}
+/* line 141, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.data-tile-nomodules {
+  background: #54277B;
+  padding: 20px;
+}
+/* line 145, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.data-tile-nomodules .data-item-container {
+  max-height: 138px;
+  overflow: hidden;
+}
+/* line 149, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.data-tile-nomodules .icon-holder {
+  color: #fff;
+  font-size: 18px;
+}
+/* line 152, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.data-tile-nomodules .icon-holder .onair,
+.node-type-tiled-page .grid-item.data-tile-nomodules .icon-holder .live,
+.node-type-tiled-page .grid-item.data-tile-nomodules .icon-holder .archive,
+.node-type-tiled-page .grid-item.data-tile-nomodules .icon-holder .calendar {
+  display: none;
+}
+/* line 159, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.data-tile-nomodules .loaded {
+  -webkit-animation: fadein 2s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 2s;
+  /* Internet Explorer  */
+  -o-animation: fadein 2s;
+  /* Opera < 12.1 */
+  animation: fadein 2s;
+}
+/* line 166, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.data-tile-nomodules .loaded.onair .icon-holder .onair {
+  display: block !important;
+}
+/* line 171, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.data-tile-nomodules .loaded.live .icon-holder .live {
+  display: block !important;
+}
+/* line 176, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.data-tile-nomodules .loaded.archive .icon-holder .archive {
+  display: block !important;
+}
+/* line 181, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.data-tile-nomodules .loaded.calendar .ladata-item-date,
+.node-type-tiled-page .grid-item.data-tile-nomodules .loaded.calendar .icon-holder .calendar {
+  display: block !important;
+}
+/* line 186, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.data-tile-nomodules .loaded .data-item-wrap {
+  display: block !important;
+}
+/* line 190, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.data-tile-nomodules .calendar {
+  width: 100%;
+}
+/* line 193, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.data-tile-nomodules .node-title,
+.node-type-tiled-page .grid-item.data-tile-nomodules .data-item-wrap {
+  display: none;
+}
+/* line 198, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.highlight-tile-nomodules {
+  background: #212121;
+  text-align: left;
+  width: 32.54%;
+  min-height: 246px;
+  max-height: 246px;
+  padding: 20px !important;
+}
+@media all and (min-width: 540px) and (max-width: 960px) {
+  /* line 198, ../sass/components/_isotope-tiles-nomodules.scss */
+  .node-type-tiled-page .grid-item.highlight-tile-nomodules {
+    width: 65.08%;
+  }
+}
+/* line 208, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.highlight-tile-nomodules header {
+  max-height: 50px;
+  overflow: hidden;
+}
+/* line 212, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.highlight-tile-nomodules h2 {
+  line-height: normal;
+}
+/* line 215, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.highlight-tile-nomodules img {
+  float: left;
+  margin: 10px 0 0;
+}
+/* line 219, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.highlight-tile-nomodules .field-name-body {
+  left: 10px;
+  top: 10px;
+  position: relative;
+}
+/* line 223, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.highlight-tile-nomodules .field-name-body p {
+  font-size: 14px;
+  line-height: 1.1em;
+}
+@media all and (max-width: 540px) {
+  /* line 198, ../sass/components/_isotope-tiles-nomodules.scss */
+  .node-type-tiled-page .grid-item.highlight-tile-nomodules {
+    position: inherit;
+    left: 0;
+  }
+}
+/* line 233, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.city-services-tile-nomodules:nth-child(n), .node-type-tiled-page .grid-item.highlight-tile-nomodules, .node-type-tiled-page .grid-item.data-tile-nomodules, .node-type-tiled-page .grid-item.city-services-tile-nomodules {
+  background: #165090;
+}
+/* line 239, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.city-services-tile-nomodules {
+  text-align: center;
+  /*&:nth-child(1n) {
+    background: green;
+  }
+  &:nth-child(2n) {
+    background: #014982;
+  }
+  &:nth-child(3n) {
+    background: orange;
+  }*/
+}
+/* line 242, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.city-services-tile-nomodules.isotope-nid-3766 {
+  width: 32.54%;
+}
+/* line 244, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.city-services-tile-nomodules.isotope-nid-3766 .oneclearpixel {
+  display: none;
+}
+@media all and (min-width: 540px) and (max-width: 960px) {
+  /* line 242, ../sass/components/_isotope-tiles-nomodules.scss */
+  .node-type-tiled-page .grid-item.city-services-tile-nomodules.isotope-nid-3766 {
+    width: 65.08%;
+  }
+}
+/* line 258, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.city-services-tile-nomodules article {
+  height: 100%;
+  min-height: 250px;
+  padding: 20px;
+  position: relative;
+}
+/* line 263, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.city-services-tile-nomodules article .oneclearpixel img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* line 271, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.city-services-tile-nomodules header {
+  display: none;
+}
+/* line 274, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.city-services-tile-nomodules .field-name-field-image {
+  text-align: center;
+}
+/* line 278, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.city-services-tile-nomodules, .node-type-tiled-page .grid-item.data-tile-nomodules {
+  min-height: 246px;
+  max-height: 246px;
+  width: 16.08%;
+}
+@media all and (min-width: 540px) and (max-width: 960px) {
+  /* line 278, ../sass/components/_isotope-tiles-nomodules.scss */
+  .node-type-tiled-page .grid-item.city-services-tile-nomodules, .node-type-tiled-page .grid-item.data-tile-nomodules {
+    width: 32.54%;
+  }
+}
+/* line 287, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item #link-more-chevron,
+.node-type-tiled-page .grid-item #link-more-chevron2 {
+  font-size: 4em;
+  position: absolute;
+  top: -4px;
+}
+/* line 294, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item #link-more-chevron {
+  opacity: .6;
+  right: -10px;
+}
+/* line 299, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item #link-more-chevron2 {
+  color: #666;
+  right: -8px;
+}
+/* line 306, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.city-services-tile-nomodules article {
+  padding: 70px 20px 20px 20px;
+}
+@media all and (min-width: 541px) {
+  /* line 306, ../sass/components/_isotope-tiles-nomodules.scss */
+  .node-type-tiled-page .grid-item.city-services-tile-nomodules article {
+    padding: 50px 20px 20px 20px;
+  }
+}
+/* line 312, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.city-services-tile-nomodules .subtitle {
+  font-size: 16px;
+}
+/* line 315, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.city-services-tile-nomodules .field-name-field-link a {
+  font-size: 28px;
+}
+@media all and (min-width: 541px) {
+  /* line 315, ../sass/components/_isotope-tiles-nomodules.scss */
+  .node-type-tiled-page .grid-item.city-services-tile-nomodules .field-name-field-link a {
+    font-size: 20px;
+  }
+}
+/* line 322, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.city-services-tile-nomodules.isotope-nid-3766 article {
+  padding: 40px 20px 20px 20px;
+}
+@media all and (min-width: 541px) {
+  /* line 322, ../sass/components/_isotope-tiles-nomodules.scss */
+  .node-type-tiled-page .grid-item.city-services-tile-nomodules.isotope-nid-3766 article {
+    padding: 50px 20px 20px 20px;
+  }
+}
+/* line 332, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.highlight-tile-nomodules .field-name-body {
+  padding-right: 10px;
+}
+/* line 334, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.highlight-tile-nomodules .field-name-body p {
+  font-family: "lato-reg", sans-serif;
+}
+/* line 340, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.data-tile-nomodules {
+  padding: 50px 20px 20px 20px;
+}
+/* line 342, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.data-tile-nomodules .ladata-item-title {
+  line-height: 14px;
+}
+/* line 344, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.data-tile-nomodules .ladata-item-title a {
+  font-size: 14px !important;
+}
+/* line 352, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.isotope-nid-1216 a {
+  font-size: 18px;
+}
+/* line 355, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.isotope-nid-1216 article {
+  text-align: center;
+}
+/* line 360, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.isotope-nid-1216 .link-more-items {
+  display: none;
+}
+/* line 364, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.isotope-nid-1216 .data-item-data-feed {
+  display: none;
+}
+/* line 369, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item .waiting #wait-circle-holder {
+  margin-top: -24px !important;
+}
+/* line 375, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.isotope-nid-1261, .node-type-tiled-page .grid-item.isotope-nid-1266, .node-type-tiled-page .grid-item.isotope-nid-1271, .node-type-tiled-page .grid-item.isotope-nid-1211 {
+  background-size: cover;
+}
+/* line 382, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.city-services-tile-nomodules.isotope-nid-1261, .node-type-tiled-page .grid-item.city-services-tile-nomodules.isotope-nid-1261 article {
+  background-image: url("../images/tiles/hero_0/tile_0.jpg");
+}
+/* line 386, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.city-services-tile-nomodules.isotope-nid-1266, .node-type-tiled-page .grid-item.city-services-tile-nomodules.isotope-nid-1266 article {
+  background-image: url("../images/tiles/hero_0/tile_1.jpg");
+}
+/* line 390, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.city-services-tile-nomodules.isotope-nid-1271, .node-type-tiled-page .grid-item.city-services-tile-nomodules.isotope-nid-1271 article {
+  background-image: url("../images/tiles/hero_0/tile_2.jpg");
+}
+/* line 395, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.city-services-tile-nomodules.isotope-nid-64551, .node-type-tiled-page .grid-item.city-services-tile-nomodules.isotope-nid-64551 article {
+  background-image: url("../images/tiles/hero_0/tile_3.jpg");
+}
+/* line 400, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.city-services-tile-nomodules.isotope-nid-70941, .node-type-tiled-page .grid-item.city-services-tile-nomodules.isotope-nid-70941 article {
+  background-image: url("../images/tiles/hero_0/tile_3.jpg");
+}
+
+@media all and (max-width: 540px) {
+  /* line 409, ../sass/components/_isotope-tiles-nomodules.scss */
+  .node-type-tiled-page #content {
+    width: 100% !important;
+    margin-bottom: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-top: 0 !important;
+  }
+  /* line 415, ../sass/components/_isotope-tiles-nomodules.scss */
+  .node-type-tiled-page #content .wrap {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* line 421, ../sass/components/_isotope-tiles-nomodules.scss */
+  .view-isotope-tiles {
+    margin: 0 !important;
+  }
+
+  /* line 424, ../sass/components/_isotope-tiles-nomodules.scss */
+  .grid-item {
+    border-top: 1px solid #212121;
+    max-width: 100% !important;
+    margin: 0 !important;
+    width: 100% !important;
+  }
+
+  /* line 430, ../sass/components/_isotope-tiles-nomodules.scss */
+  .grid-item,
+  .grid-item.blog-tile-nomodules img,
+  .grid-item.blog-tile-nomodules .node-title a {
+    border-radius: 0 !important;
+  }
+
+  /* line 435, ../sass/components/_isotope-tiles-nomodules.scss */
+  .grid-item.blog-tile-nomodules img {
+    max-height: initial;
+  }
+
+  /* line 438, ../sass/components/_isotope-tiles-nomodules.scss */
+  .grid-item.calendar-event,
+  .grid-item.city-services-tile-nomodules {
+    height: auto;
+  }
+
+  /* line 443, ../sass/components/_isotope-tiles-nomodules.scss */
+  .grid-item.city-services-tile-nomodules .field-name-field-image {
+    float: left;
+    padding-right: 20px;
+    text-align: left;
+  }
+
+  /* line 449, ../sass/components/_isotope-tiles-nomodules.scss */
+  .grid-item.highlight-tile-nomodules,
+  .grid-item.blog-tile-nomodules .field-name-field-image {
+    min-width: initial;
+  }
+}
+/* line 467, ../sass/components/_isotope-tiles-nomodules.scss */
+.node-type-tiled-page .grid-item.city-services-tile-nomodules.isotope-nid-1261 article,
+.node-type-tiled-page .grid-item.city-services-tile-nomodules.isotope-nid-1266 article,
+.node-type-tiled-page .grid-item.city-services-tile-nomodules.isotope-nid-1271 article,
+.node-type-tiled-page .grid-item.city-services-tile-nomodules.isotope-nid-64551 article,
+.node-type-tiled-page .grid-item.city-services-tile-nomodules.isotope-nid-70941 article {
+  position: absolute;
+}

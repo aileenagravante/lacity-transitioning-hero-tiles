@@ -1,0 +1,56 @@
+//
+//  Mixins
+//
+
+// We can add these to style blocks to target media queries within
+@mixin window_size($width) {
+  @if $width == desktop_wide {
+    @media all and (min-width : 1290px) { @content; }
+  }
+  @if $width == desktop {
+    @media all and (min-width : 960px) { @content; }
+  }
+  @else if $width == tab-plus {
+    @media all and (min-width : 767px) { @content; }
+  }
+  @else if $width == tab-wide-up {
+    @media all and (min-width : 720px) { @content; }
+  }
+  @else if $width == mobile-plus {
+    @media all and (min-width : 610px) { @content; }
+  }
+  @else if $width == mobile-one-tile {
+    @media all and (min-width : 541px) { @content; }
+  }
+  @else if $width == tab-narrow-up {
+    @media all and (min-width : 481px) { @content; }
+  }
+}
+
+// Stop repeating vendor prefixes
+@mixin vendor-prefix($name, $argument) {
+  -webkit-#{$name}: #{$argument};
+  -ms-#{$name}: #{$argument};
+  -moz-#{$name}: #{$argument};
+  -o-#{$name}: #{$argument};
+  #{$name}: #{$argument};
+}
+
+//Icons for landing pages
+@mixin icons_wrap($mleft) {
+  overflow: hidden;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: $mleft;
+  width:97%;
+}
+@mixin icons_box($width) {
+  float: left;
+  position: relative;
+  height: 167px;
+  margin: 10px;
+  background: #2d4d73;
+  width: $width;
+  @include vendor-prefix(border-radius, 8px);
+}
